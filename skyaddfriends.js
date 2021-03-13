@@ -2,9 +2,9 @@
 var url = rawInput('请输入好友链接');
 url = url.trim();
 //校验链接
-var isNetease = /^http[s]{0,1}:\/\/sky.163.com\/yqlj\/\?i=[\w_]+$/.test(url);
-var isInternational = /^http[s]{0,1}:\/\/sky.thatg.co\/\?i=[\w_]+$/.test(url);
-var isTest = /^http[s]{0,1}:\/\/sky-beta.thatg.co\/\?i=[\w_]+$/.test(url);
+var isNetease = /^http[s]{0,1}:\/\/sky.163.com\/yqlj\/\?i=[\w_-]+$/.test(url);
+var isInternational = /^http[s]{0,1}:\/\/sky.thatg.co\/\?i=[\w_-]+$/.test(url);
+var isTest = /^http[s]{0,1}:\/\/sky-beta.thatg.co\/\?i=[\w_-]+$/.test(url);
 var packageName,className;
 //判断国服或国际服链接
 if (isNetease == false && isInternational == false  && isTest == false) {
