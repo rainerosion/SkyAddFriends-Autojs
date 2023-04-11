@@ -2,7 +2,7 @@
 var url = rawInput('请输入好友链接');
 url = url.trim();
 //校验链接
-var isNetease = /^http[s]{0,1}:\/\/sky.163.com\/yqlj\/\?i=[\w_-]+$/.test(url);
+var isNetease = /^http[s]{0,1}:\/\/sky.163.com\/yqlj\/\?i=[\w_-]+&app_channel=[\w_-]+$/.test(url);
 var isInternational = /^http[s]{0,1}:\/\/sky.thatg.co\/\?i=[\w_-]+$/.test(url);
 var isTest = /^http[s]{0,1}:\/\/sky-beta.thatg.co\/\?i=[\w_-]+$/.test(url);
 var packageName,className;
